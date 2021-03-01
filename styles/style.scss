@@ -136,14 +136,73 @@ body {
 
 @media (max-width: 375px) {
   .container {
-    width: 90%;
+    width: 100%;
+    margin: auto;
   }
   .top-section {
     flex-direction: column;
-    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    .title-section {
+      text-align: center;
+      width: 80%;
 
-    h1 {
-      font-size: 1.5rem;
+      h1 {
+        font-size: 1.725rem;
+        width: 100%;
+        margin: auto;
+      }
+
+      p {
+        font-size: 0.9rem;
+        width: 100%;
+        margin: 1rem auto;
+      }
+    }
+
+    .review-section {
+      width: 90%;
+      margin: auto;
+      .review {
+        flex-direction: column;
+        margin: 1rem;
+        text-align: center;
+        width: 100%;
+        .stars {
+          margin-bottom: 0.5rem;
+        }
+      }
+      #review-1 {
+        margin-left: 0;
+      }
+
+      #review-2 {
+        margin-left: 0;
+      }
+
+      #review-3 {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .quote-section {
+    flex-direction: column;
+    width: 90%;
+    margin: 1rem auto;
+    .quote {
+      margin: 1rem 0;
+    }
+    #quote-1 {
+      margin-bottom: 0;
+    }
+
+    #quote-2 {
+      margin-bottom: 0;
+    }
+
+    #quote-3 {
+      margin-bottom: 0;
     }
   }
 }
