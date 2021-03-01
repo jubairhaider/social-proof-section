@@ -15,3 +15,135 @@ body {
   background-color: $white;
   color: $dark-grayish-magenta;
 }
+
+.container {
+  width: 75%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.top-section {
+  margin: 8rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .title-section {
+    width: 45%;
+    text-align: left;
+
+    h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 1;
+      color: $very-dark-magenta;
+    }
+
+    p {
+      margin-top: 1rem;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+  }
+
+  .review {
+    background-color: $light-grayish-magenta;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .stars {
+      margin-right: 1.5rem;
+    }
+
+    .review-text {
+      color: $very-dark-magenta;
+      font-weight: 700;
+    }
+  }
+
+  #review-2 {
+    margin-left: 2rem;
+    width: 100%;
+  }
+
+  #review-3 {
+    margin-left: 4rem;
+    width: 100%;
+  }
+}
+
+.quote-section {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .quote {
+    background-color: $very-dark-magenta;
+    color: $light-grayish-magenta;
+    font-size: 0.8rem;
+    margin: 0 1rem;
+    border-radius: 8px;
+    padding: 3rem 2rem;
+
+    .quote-top {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      width: 100%;
+
+      img {
+        border-radius: 50%;
+        height: 2.5rem;
+        margin: 0.5rem;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.5rem;
+        .name {
+          font-weight: 700;
+          font-size: 0.8rem;
+        }
+
+        .role {
+          color: $soft-pink;
+          margin-top: 0.25rem;
+        }
+      }
+    }
+
+    .quote-text {
+      font-weight: 500;
+      text-align: center;
+      line-height: 1.5;
+    }
+  }
+
+  #quote-1 {
+    margin-bottom: 4rem;
+  }
+
+  #quote-2 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 90%;
+  }
+  .top-section {
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+}
